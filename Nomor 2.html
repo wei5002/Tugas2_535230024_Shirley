@@ -1,0 +1,43 @@
+<html>
+<head>
+    <script>
+        function add(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) + Number(inp2);
+        }
+
+        function subtract(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) - Number(inp2);
+        }
+
+        function multiply(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) * Number(inp2);
+        }
+
+        function divide(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) / Number(inp2);
+        }
+    </script>
+</head>
+
+<body>
+    Bil 1 <input type="number" id="iNum1" />
+    <br><br>
+    Bil 2 <input type="number" id="iNum2" />
+    <br><br>
+    Hasil <input type="number" id="oRes" readonly>
+
+    <br><br>
+    <button type="button" style="width: 60px; height: 40px; font-size: 20px;" onclick='add("oRes", document.getElementById("iNum1").
+    value, document.getElementById("iNum2").value)'>+</button>
+
+    <button type="button" style="width: 60px; height: 40px; font-size: 20px;" onclick='subtract("oRes", document.getElementById("iNum1").
+    value, document.getElementById("iNum2").value)'>-</button>
+
+    <button type="button" style="width: 60px; height: 40px; font-size: 20px;" onclick='multiply("oRes", document.getElementById("iNum1").
+    value, document.getElementById("iNum2").value)'>x</button>
+
+    <button type="button" style="width: 60px; height: 40px; font-size: 20px;" onclick='divide("oRes", document.getElementById("iNum1").
+    value, document.getElementById("iNum2").value)'>/</button>
+
+</body>
+</html>
